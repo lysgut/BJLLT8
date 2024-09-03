@@ -57,7 +57,7 @@ body {
   font-size: 16px;
 }
 .tarjeta{
-  background-color: #3E885B;
+  background-color: #C0D7BB;
   color: #C0D7BB;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -85,22 +85,29 @@ body {
   font-weight: bold;
 }
 
+
+body {
+  padding-top: 56px; 
+}
+
+.container {
+  max-width: 1200px;
+}
+
 h1 {
   color: #2c3e50;
 }
-/* Asegúrate de que el footer se coloque al final del contenido */
+
 .custom-footer {
   background-color: #0B3954; 
   color: white;
   padding: 1rem 0;
-  position: abs; /* Cambiar de absolute a relative */
+  position: absolute;
+  bottom: 0;
   width: 100%;
   text-align: center;
-  margin: 0; /* Asegúrate de que no haya márgenes adicionales */
 }
 
-/* Asegúrate de que no haya márgenes en el body */
-body {
+.footer p {
   margin: 0;
 }
-

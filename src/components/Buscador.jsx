@@ -15,8 +15,11 @@ function Buscador() {
   const handleSearchClick = () => {
     console.log(nombre)
     setCiudad(nombre);
-    console.log(axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${nombre}&appid=${Api}`))
-    setData(axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${nombre}&appid=${Api}`))
+    console.log(`https://api.openweathermap.org/data/2.5/weather?q=${nombre}&appid=${Api}`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${nombre}&appid=${Api}`)
+      .then(res=>{
+      setData(res.data)
+    })
   };
 
   return (
@@ -28,9 +31,7 @@ function Buscador() {
           value={nombre}
           onChange={handleInputChange}
         />
-        <button className="btn btn-custom" onClick={handleSearchClick}>
-          Buscar
-        </button>
+        <button type="button" class="btn btn-secondary" onClick={handleSearchClick}>Boton</button>
       </div>
     </>
   );
