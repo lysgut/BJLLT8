@@ -48,12 +48,8 @@
   font-size: 16px;
 }
 .tarjeta{
-  width: 300px;
-  padding: 20px;
+  background-color: 3E885B;
+  color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #85BDA6;
-  color: white;
-  text-align: center;
-  font-family: Arial, sans-serif;
 }

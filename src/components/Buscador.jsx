@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Conexion from './Conexion'
+
 function Buscador() {
   const [nombre, setNombre] = useState('');
 
@@ -12,9 +13,9 @@ function Buscador() {
   return (
     <>
       <div>
-      <input type="text" placeholder="Ingresar Ciudad" value={nombre} onChange={handleInputChange} 
-      />
-      <Conexion nombre={nombre} />
+      <input type="text" placeholder="Ingresar Ciudad" value={nombre} onChange={handleInputChange} />
+      <button className="btn btn-custom">Buscar</button>
+            <Conexion nombre={nombre} />
     </div>
     </>
   )
