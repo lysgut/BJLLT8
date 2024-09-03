@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import Tarjeta from './Tarjeta';
 
 function Buscador() {
   const [nombre, setNombre] = useState('');
@@ -19,6 +20,7 @@ function Buscador() {
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${nombre}&appid=${Api}`)
       .then(res=>{
       setData(res.data)
+      console.log(data)
     })
   };
 
@@ -32,6 +34,7 @@ function Buscador() {
           onChange={handleInputChange}
         />
         <button type="button" class="btn btn-secondary" onClick={handleSearchClick}>Boton</button>
+        <Tarjeta data={data}/>
       </div>
     </>
   );

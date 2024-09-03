@@ -1,13 +1,14 @@
 import React from 'react';
-import './Tarjeta.css';
 
-function Tarjeta({ location, airQuality }) {  // Recibe los datos a través de props
+
+function Tarjeta({ data }) {    
+  console.log(data)
   return (
     <div className="Tarjeta">
       <div className="card-body">
-        <p>{location}</p>
+        <p>{data}</p>
         <h5 className="card-title">Estado del Aire</h5>
-        <p className="card-text">{airQuality}</p>
+        <p className="card-text">{data}</p>
       </div>
     </div>
   );

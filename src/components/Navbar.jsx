@@ -23,6 +23,7 @@ function Navbar() {
           <a className="nav-link" href="#">Contacto</a>
         </li>
       </ul>
+      
     </div>
   </nav>
   );
