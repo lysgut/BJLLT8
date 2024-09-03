@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+.buscador{
+  padding: 10px;
+  border: 2px solid #85BDA6;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.tarjeta{
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #85BDA6;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
