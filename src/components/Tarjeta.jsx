@@ -1,8 +1,7 @@
 import React from 'react';
 
-
 function Tarjeta({ data }) {    
-  console.log(data)
+  // console.log('tarjeta =' + data)
   return (
     <div className="Tarjeta">
       <div className="card-body">
